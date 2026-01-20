@@ -1,7 +1,7 @@
 {
   "name": "sankryptidian",
   "version": "1.0.0",
-  "description": "Professional file-level encryption plugin for Obsidian",
+  "description": "Professional file-level encryption plugin",
   "main": "main.js",
   "scripts": {
     "dev": "node esbuild.config.mjs",
