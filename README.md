@@ -117,7 +117,7 @@ This plugin:
 ### Building from Source
 
 ```bash
-git clone https://github.com/hgiorgis/sankryptidianidian.git
+git clone https://github.com/hgiorgis/sankryptidian.git
 cd sankryptidian
 npm install
 npm run build
