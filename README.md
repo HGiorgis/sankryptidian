@@ -1,6 +1,6 @@
-# Sankrypt - Professional Encryption for Obsidian
+# Sankrypt - Professional Encryption
 
-Professional file-level encryption plugin for Obsidian with military-grade AES-256-GCM security.
+Professional file-level encryption plugin with military-grade AES-256-GCM security.
 
 ![Obsidian](https://img.shields.io/badge/Obsidian-Plugin-green)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
