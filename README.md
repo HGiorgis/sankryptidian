@@ -1,4 +1,4 @@
-# Sankryptidian - Professional Encryption for Obsidian
+# Sankrypt - Professional Encryption for Obsidian
 
 Professional file-level encryption plugin for Obsidian with military-grade AES-256-GCM security.
 
@@ -20,7 +20,7 @@ Professional file-level encryption plugin for Obsidian with military-grade AES-2
 
 1. Open Obsidian Settings → Community Plugins
 2. Disable Safe Mode
-3. Click "Browse" and search for "Sankryptidian"
+3. Click "Browse" and search for "Sankrypt"
 4. Install and enable the plugin
 
 ## Quick Start
@@ -117,7 +117,7 @@ This plugin:
 ### Building from Source
 
 ```bash
-git clone https://github.com/hgiorgis/sankryptidian.git
+git clone https://github.com/hgiorgis/sankryptidianidian.git
 cd sankryptidian
 npm install
 npm run build

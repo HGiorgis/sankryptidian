@@ -1,4 +1,4 @@
-/* Sankryptidian Enhanced Styles */
+/* Sankrypt Enhanced Styles */
 
 /* Status bar animation */
 @keyframes pulse {
@@ -13,16 +13,16 @@
   }
 }
 
-.sankryptidian-status-pulse {
+.sankrypt-status-pulse {
   animation: pulse 2s infinite;
 }
 
 /* Modal enhancements */
-.modal-container.sankryptidian-modal {
+.modal-container.sankrypt-modal {
   backdrop-filter: blur(2px);
 }
 
-.modal.sankryptidian-theme {
+.modal.sankrypt-theme {
   border: 1px solid var(--background-modifier-border);
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -39,7 +39,9 @@
 
 .password-strength-fill {
   height: 100%;
-  transition: width 0.3s ease, background 0.3s ease;
+  transition:
+    width 0.3s ease,
+    background 0.3s ease;
 }
 
 .strength-weak {
@@ -59,22 +61,22 @@
 }
 
 /* File browser styling */
-.sankryptidian-file-item {
+.sankrypt-file-item {
   transition: all 0.2s ease;
   border-left: 3px solid transparent;
 }
 
-.sankryptidian-file-item:hover {
+.sankrypt-file-item:hover {
   border-left-color: var(--interactive-accent);
 }
 
-.sankryptidian-file-item.selected {
+.sankrypt-file-item.selected {
   background: var(--background-modifier-hover) !important;
   border-left-color: var(--interactive-accent);
 }
 
 /* Encryption badge */
-.sankryptidian-badge {
+.sankrypt-badge {
   display: inline-block;
   padding: 2px 6px;
   border-radius: 4px;
@@ -98,11 +100,11 @@
 }
 
 /* Tooltip */
-.sankryptidian-tooltip {
+.sankrypt-tooltip {
   position: relative;
 }
 
-.sankryptidian-tooltip:hover::after {
+.sankrypt-tooltip:hover::after {
   content: attr(data-tooltip);
   position: absolute;
   bottom: 100%;
@@ -119,7 +121,7 @@
 }
 
 /* ========== ENCRYPTION VIEWER STYLES ========== */
-.sankryptidian-encryption-viewer {
+.sankrypt-encryption-viewer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,7 +132,7 @@
   background: var(--background-primary);
 }
 
-.sankryptidian-encryption-icon {
+.sankrypt-encryption-icon {
   width: 120px;
   height: 120px;
   margin-bottom: 30px;
@@ -138,7 +140,7 @@
   opacity: 0.8;
 }
 
-.sankryptidian-encryption-title {
+.sankrypt-encryption-title {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -146,7 +148,7 @@
   letter-spacing: 1px;
 }
 
-.sankryptidian-encryption-subtitle {
+.sankrypt-encryption-subtitle {
   font-size: 16px;
   color: var(--text-muted);
   margin-bottom: 40px;
@@ -154,7 +156,7 @@
   line-height: 1.5;
 }
 
-.sankryptidian-encryption-info {
+.sankrypt-encryption-info {
   background: var(--background-secondary);
   border-radius: 12px;
   padding: 25px;
@@ -164,7 +166,7 @@
   border-left: 4px solid var(--interactive-accent);
 }
 
-.sankryptidian-encryption-info h3 {
+.sankrypt-encryption-info h3 {
   margin: 0 0 15px 0;
   color: var(--text-accent);
   font-size: 18px;
@@ -174,12 +176,12 @@
   gap: 10px;
 }
 
-.sankryptidian-encryption-details {
+.sankrypt-encryption-details {
   text-align: left;
   margin-top: 20px;
 }
 
-.sankryptidian-encryption-detail {
+.sankrypt-encryption-detail {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
@@ -187,22 +189,22 @@
   font-size: 14px;
 }
 
-.sankryptidian-encryption-detail:last-child {
+.sankrypt-encryption-detail:last-child {
   border-bottom: none;
 }
 
-.sankryptidian-encryption-detail-label {
+.sankrypt-encryption-detail-label {
   color: var(--text-muted);
   font-weight: 500;
 }
 
-.sankryptidian-encryption-detail-value {
+.sankrypt-encryption-detail-value {
   color: var(--text-normal);
   font-family: monospace;
   font-size: 13px;
 }
 
-.sankryptidian-encryption-actions {
+.sankrypt-encryption-actions {
   display: flex;
   gap: 15px;
   margin-top: 30px;
@@ -210,7 +212,7 @@
   justify-content: center;
 }
 
-.sankryptidian-encryption-button {
+.sankrypt-encryption-button {
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 600;
@@ -223,32 +225,32 @@
   border: 2px solid transparent;
 }
 
-.sankryptidian-encryption-button-primary {
+.sankrypt-encryption-button-primary {
   background: var(--interactive-accent);
   color: var(--text-on-accent);
   border-color: var(--interactive-accent);
 }
 
-.sankryptidian-encryption-button-primary:hover {
+.sankrypt-encryption-button-primary:hover {
   background: var(--interactive-accent-hover);
   border-color: var(--interactive-accent-hover);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(var(--interactive-accent-rgb), 0.3);
 }
 
-.sankryptidian-encryption-button-secondary {
+.sankrypt-encryption-button-secondary {
   background: var(--background-primary);
   color: var(--text-normal);
   border: 2px solid var(--background-modifier-border);
 }
 
-.sankryptidian-encryption-button-secondary:hover {
+.sankrypt-encryption-button-secondary:hover {
   background: var(--background-modifier-hover);
   border-color: var(--interactive-accent);
   transform: translateY(-2px);
 }
 
-.sankryptidian-encryption-warning {
+.sankrypt-encryption-warning {
   margin-top: 30px;
   padding: 15px;
   background: rgba(239, 68, 68, 0.1);
@@ -258,14 +260,14 @@
   width: 100%;
 }
 
-.sankryptidian-encryption-warning p {
+.sankrypt-encryption-warning p {
   margin: 0;
   color: var(--text-error);
   font-size: 13px;
   font-weight: 500;
 }
 
-.sankryptidian-encryption-tag {
+.sankrypt-encryption-tag {
   display: inline-block;
   padding: 4px 10px;
   background: rgba(59, 130, 246, 0.1);
@@ -311,12 +313,12 @@
   outline-offset: -1px !important;
 }
 /* Enhanced Settings Styles */
-.setting-item.sankryptidian-setting {
+.setting-item.sankrypt-setting {
   padding: 16px 0;
   border-bottom: 1px solid var(--background-modifier-border);
 }
 
-.setting-item.sankryptidian-setting:last-child {
+.setting-item.sankrypt-setting:last-child {
   border-bottom: none;
 }
 
@@ -346,14 +348,14 @@
 }
 
 /* Textarea placeholder styling */
-.sankryptidian-textarea::placeholder {
+.sankrypt-textarea::placeholder {
   color: var(--text-muted);
   opacity: 0.7;
   font-style: italic;
 }
 
 /* Settings section headers */
-.sankryptidian-settings-header {
+.sankrypt-settings-header {
   font-size: 18px;
   font-weight: 600;
   color: var(--text-accent);
@@ -363,7 +365,7 @@
 }
 
 /* Settings category styling */
-.sankryptidian-settings-category {
+.sankrypt-settings-category {
   background: var(--background-secondary);
   border-radius: 8px;
   padding: 15px;
@@ -384,11 +386,11 @@
   }
 }
 
-.sankryptidian-character-counter {
+.sankrypt-character-counter {
   animation: character-count-pulse 0.3s ease;
 }
 /* Password hint counter styles */
-.sankryptidian-counter {
+.sankrypt-counter {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -398,28 +400,28 @@
   transition: all 0.2s ease;
 }
 
-.sankryptidian-counter-warning {
+.sankrypt-counter-warning {
   font-weight: 600;
   opacity: 0;
   transition: opacity 0.3s ease;
   animation: warning-pulse 1s ease-in-out;
 }
 
-.sankryptidian-counter-warning.visible {
+.sankrypt-counter-warning.visible {
   opacity: 1;
 }
 
-.sankryptidian-counter-count {
+.sankrypt-counter-count {
   font-weight: normal;
   transition: all 0.2s ease;
 }
 
-.sankryptidian-counter-count.warning {
+.sankrypt-counter-count.warning {
   color: #f59e0b;
   font-weight: bold;
 }
 
-.sankryptidian-counter-count.danger {
+.sankrypt-counter-count.danger {
   color: #ef4444;
   font-weight: bold;
 }
@@ -437,7 +439,7 @@
 }
 
 /* Textarea limit warning */
-.sankryptidian-textarea-limit {
+.sankrypt-textarea-limit {
   border-color: #ef4444 !important;
   animation: limit-shake 0.5s ease-in-out;
 }
@@ -456,7 +458,7 @@
 }
 
 /* Enhanced textarea styling */
-.sankryptidian-textarea-container {
+.sankrypt-textarea-container {
   position: relative;
   width: 100%;
   margin-bottom: 5px;

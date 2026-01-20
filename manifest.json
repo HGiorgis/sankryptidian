@@ -1,6 +1,6 @@
 {
-  "id": "sankryptidian",
-  "name": "Sankryptidian",
+  "id": "sankrypt",
+  "name": "Sankrypt",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
   "description": "Professional file-level encryption with military-grade AES-256-GCM security.",
