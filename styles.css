@@ -1,0 +1,463 @@
+/* Sankryptidian Enhanced Styles */
+
+/* Status bar animation */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sankryptidian-status-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Modal enhancements */
+.modal-container.sankryptidian-modal {
+  backdrop-filter: blur(2px);
+}
+
+.modal.sankryptidian-theme {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Password strength indicator */
+.password-strength-meter {
+  height: 6px;
+  border-radius: 3px;
+  margin: 8px 0;
+  overflow: hidden;
+  background: var(--background-modifier-border);
+}
+
+.password-strength-fill {
+  height: 100%;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.strength-weak {
+  background: #ef4444;
+}
+.strength-fair {
+  background: #f59e0b;
+}
+.strength-good {
+  background: #10b981;
+}
+.strength-strong {
+  background: #3b82f6;
+}
+.strength-very-strong {
+  background: #8b5cf6;
+}
+
+/* File browser styling */
+.sankryptidian-file-item {
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.sankryptidian-file-item:hover {
+  border-left-color: var(--interactive-accent);
+}
+
+.sankryptidian-file-item.selected {
+  background: var(--background-modifier-hover) !important;
+  border-left-color: var(--interactive-accent);
+}
+
+/* Encryption badge */
+.sankryptidian-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: 8px;
+}
+
+.badge-encrypted {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--text-accent);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.badge-locked {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* Tooltip */
+.sankryptidian-tooltip {
+  position: relative;
+}
+
+.sankryptidian-tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 10px;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== ENCRYPTION VIEWER STYLES ========== */
+.sankryptidian-encryption-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 80vh;
+  background: var(--background-primary);
+}
+
+.sankryptidian-encryption-icon {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 30px;
+  color: var(--text-muted);
+  opacity: 0.8;
+}
+
+.sankryptidian-encryption-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--text-normal);
+  letter-spacing: 1px;
+}
+
+.sankryptidian-encryption-subtitle {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.sankryptidian-encryption-info {
+  background: var(--background-secondary);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 30px 0;
+  max-width: 600px;
+  width: 100%;
+  border-left: 4px solid var(--interactive-accent);
+}
+
+.sankryptidian-encryption-info h3 {
+  margin: 0 0 15px 0;
+  color: var(--text-accent);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sankryptidian-encryption-details {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.sankryptidian-encryption-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+  font-size: 14px;
+}
+
+.sankryptidian-encryption-detail:last-child {
+  border-bottom: none;
+}
+
+.sankryptidian-encryption-detail-label {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.sankryptidian-encryption-detail-value {
+  color: var(--text-normal);
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.sankryptidian-encryption-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sankryptidian-encryption-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.sankryptidian-encryption-button-primary {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+.sankryptidian-encryption-button-primary:hover {
+  background: var(--interactive-accent-hover);
+  border-color: var(--interactive-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(var(--interactive-accent-rgb), 0.3);
+}
+
+.sankryptidian-encryption-button-secondary {
+  background: var(--background-primary);
+  color: var(--text-normal);
+  border: 2px solid var(--background-modifier-border);
+}
+
+.sankryptidian-encryption-button-secondary:hover {
+  background: var(--background-modifier-hover);
+  border-color: var(--interactive-accent);
+  transform: translateY(-2px);
+}
+
+.sankryptidian-encryption-warning {
+  margin-top: 30px;
+  padding: 15px;
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #ef4444;
+  max-width: 600px;
+  width: 100%;
+}
+
+.sankryptidian-encryption-warning p {
+  margin: 0;
+  color: var(--text-error);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sankryptidian-encryption-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--text-accent);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 5px;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* File explorer encrypted file styling */
+.nav-file-title[data-path$=".skenc"] {
+  color: var(--text-accent) !important;
+  font-weight: 500 !important;
+}
+
+.nav-file-title[data-path$=".skenc"]:before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: text-bottom;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>');
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.nav-file-title[data-path$=".skenc"]:hover {
+  background-color: var(--background-modifier-hover) !important;
+}
+
+.nav-file-title[data-path$=".skenc"].is-active {
+  background-color: var(--interactive-accent) !important;
+  color: var(--text-on-accent) !important;
+}
+
+/* Fix for modal input focus */
+.modal input:focus,
+.modal textarea:focus {
+  outline: 2px solid var(--interactive-accent) !important;
+  outline-offset: -1px !important;
+}
+/* Enhanced Settings Styles */
+.setting-item.sankryptidian-setting {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.setting-item.sankryptidian-setting:last-child {
+  border-bottom: none;
+}
+
+/* Dropdown styling for consistency */
+.modal .dropdown {
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.modal .dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal .dropdown::-webkit-scrollbar-track {
+  background: var(--background-secondary);
+  border-radius: 4px;
+}
+
+.modal .dropdown::-webkit-scrollbar-thumb {
+  background: var(--background-modifier-border);
+  border-radius: 4px;
+}
+
+.modal .dropdown::-webkit-scrollbar-thumb:hover {
+  background: var(--interactive-accent);
+}
+
+/* Textarea placeholder styling */
+.sankryptidian-textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+  font-style: italic;
+}
+
+/* Settings section headers */
+.sankryptidian-settings-header {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-accent);
+  margin: 25px 0 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--background-modifier-border);
+}
+
+/* Settings category styling */
+.sankryptidian-settings-category {
+  background: var(--background-secondary);
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+  border-left: 4px solid var(--interactive-accent);
+}
+
+/* Character counter animation */
+@keyframes character-count-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sankryptidian-character-counter {
+  animation: character-count-pulse 0.3s ease;
+}
+/* Password hint counter styles */
+.sankryptidian-counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 6px;
+  padding: 0 2px;
+  transition: all 0.2s ease;
+}
+
+.sankryptidian-counter-warning {
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: warning-pulse 1s ease-in-out;
+}
+
+.sankryptidian-counter-warning.visible {
+  opacity: 1;
+}
+
+.sankryptidian-counter-count {
+  font-weight: normal;
+  transition: all 0.2s ease;
+}
+
+.sankryptidian-counter-count.warning {
+  color: #f59e0b;
+  font-weight: bold;
+}
+
+.sankryptidian-counter-count.danger {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+@keyframes warning-pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Textarea limit warning */
+.sankryptidian-textarea-limit {
+  border-color: #ef4444 !important;
+  animation: limit-shake 0.5s ease-in-out;
+}
+
+@keyframes limit-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+}
+
+/* Enhanced textarea styling */
+.sankryptidian-textarea-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5px;
+}

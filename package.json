@@ -1,0 +1,25 @@
+{
+  "name": "sankryptidian",
+  "version": "1.0.0",
+  "description": "Professional file-level encryption plugin for Obsidian",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production",
+    "watch": "node esbuild.config.mjs --watch"
+  },
+  "keywords": [
+    "obsidian",
+    "encryption",
+    "security",
+    "privacy",
+    "aes-256"
+  ],
+  "author": "Hailegiorgis Wagaye",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "esbuild": "^0.19.0",
+    "obsidian": "latest"
+  }
+}
